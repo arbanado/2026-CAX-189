@@ -1,0 +1,22 @@
+[project]
+name = "flan-market-research"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.14.0",
+    "datasets<4",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "sentencepiece>=0.2.2",
+    "torch>=2.13.0",
+    "transformers==4.46.3",
+]
+
+[project.scripts]
+flan-market-research = "flan_market_research:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
